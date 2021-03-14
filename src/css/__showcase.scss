@@ -1,0 +1,106 @@
+
+.showcase{
+  
+  margin: 8rem auto 0 auto;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  width: 87%;
+  text-align: center;
+  text-transform: capitalize;
+  
+  background: #fff;
+  box-shadow: -9px -6px 122px -33px rgba(0,0,0,0.75);
+  .btn-wrap{
+    //margin-bottom: 1rem;
+    display: flex;
+   // height: 50px;
+    justify-content: center;
+    .showcase__btn{
+      margin-right: 1rem;
+      background: $moderateCyan;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      font-size: 1rem;
+      text-transform: lowercase;
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover{
+        background: $darkCyan
+      }
+    }
+    .bookmark__btn{
+      //padding-right: 15px;
+      display: flex;
+      border: none;
+      align-items: center;
+      justify-content: space-between;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover{
+        background: #fff
+      }
+      img{
+        height: 50px;
+        width: auto;
+      }
+      span{
+        display: none;
+        
+      }
+    }
+  }
+  img{
+    display: inline-block;
+    //border: red solid 1px;
+    width: 70px;
+  }
+  &__master-icon{
+    position: relative;
+    top: -1.6rem;
+    
+  }
+  h1{
+    font-size: 1.8rem;
+  }
+  p{
+    margin: 1.5rem 0;
+    color: #8f8989;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 800px){
+  .showcase{
+    width: 800px;
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+    
+    h1{
+      font-size: 2.4rem;
+    }
+    .btn-wrap{
+      span{
+        display: block !important;
+        margin-left: 10px;
+        color: $darkCyan;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      justify-content: space-between;
+      margin-top: 2.3rem;
+      .bookmark__btn{
+        padding-right: 15px;
+      }
+      
+    }
+  }
+}

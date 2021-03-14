@@ -1,0 +1,30 @@
+.jumbotron{
+  width: 100%;
+  height: 350px;
+  background: url(../image/image-hero-desktop.jpg) no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  //position: relative;
+  &::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+   // z-index: 3;
+    box-shadow: inset 10px 10px 150px #000000,inset -10px -10px 150px #100f0f;
+  }
+}
+@media screen and (max-width: 800px){
+  .jumbotron{
+    background : url(../image/image-hero-mobile.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+  }
+}

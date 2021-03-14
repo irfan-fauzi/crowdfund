@@ -1,6 +1,7 @@
 import './css/main.css';
 import Navbar from './header/Navbar';
 import Jumbotron from './jumbotron/Jumbotron';
+import Showcase from './showcase/Showcase';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Jumbotron />
+      <Showcase />
     </div>
   );
 }
