@@ -1,0 +1,69 @@
+.backed{
+
+  //gap: 2rem;
+  width: 87%;
+  margin: auto;
+  border: rgb(225, 225, 226) solid 1px;
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(72, 71, 71);
+  .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+ 
+  &__card{
+    border-bottom: rgb(177, 175, 175) solid 1px;
+    text-align: center;
+    padding: 10px;
+    p{
+      margin-top: 10px;
+    }
+  }
+  .progres-bar{
+    //border: $moderateCyan solid 1px;
+    width: 87%;
+    height: 15px;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 15px;
+    //padding: 4px;
+    background: #e6e2e2;
+    .level{
+      width: 80%;
+      background: $moderateCyan;
+      height: 100%;
+      border-radius: 15px;
+     
+    }
+  }
+  
+}
+
+@media screen and (min-width: 800px){
+
+  .backed{
+    width: 800px;
+    .progres-bar{
+      margin-top: 0;
+    }
+    .flex{
+      flex-direction: row;
+      padding: 2rem 3rem;
+    }
+    &__card{
+      width: 100%;
+      text-align: left;
+      border-bottom: none;
+      border-right: rgb(177, 175, 175) solid 1px;
+      &:last-child{
+        border-right: none;
+      }
+    }
+  }
+}

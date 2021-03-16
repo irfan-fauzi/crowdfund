@@ -1,5 +1,6 @@
 header{
   background: transparent;
+  padding-top: 1rem;
 }
 .container-nav{
  // border: red solid 1px;
@@ -51,12 +52,12 @@ header{
     }
   }
   .show{
-    height: 14rem;
-    top: 3.6rem;
+    height: 20rem;
+    top: 5rem;
   //  width: 80%;
     margin: auto;
     border-radius: 10px;
-    box-shadow: -9px -6px 122px -33px rgba(0,0,0,0.75);
+    box-shadow: 28px 24px 361px 73px rgba(0,0,0,0.75);
   }
 }
 

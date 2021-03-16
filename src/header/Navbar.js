@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import logo from '../image/logo.svg';
 import { FaBars } from 'react-icons/fa';
 import { listNav } from '../data/index';
